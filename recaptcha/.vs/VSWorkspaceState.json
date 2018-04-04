@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\recaptcha",
+    "\\recaptcha\\App_Start",
+    "\\recaptcha\\bin",
+    "\\recaptcha\\Content",
+    "\\recaptcha\\Controllers",
+    "\\recaptcha\\fonts",
+    "\\recaptcha\\obj",
+    "\\recaptcha\\Properties",
+    "\\recaptcha\\Scripts"
+  ],
+  "SelectedNode": "\\recaptcha.sln",
+  "PreviewInSolutionExplorer": false
+}

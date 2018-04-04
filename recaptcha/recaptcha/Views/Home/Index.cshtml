@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<h2>Simple Form</h2>
+<div>
+    <span> <label>FirstName</label> </span>
+    <input type="text" name="agename"/>
+</div>
+<div>
+    <span> <label>Age</label> </span>
+    <input type="number" name="" />
+</div>
+<div>
+    @using (Html.BeginForm("FormSubmit", "Home", FormMethod.Post))
+    {
+        <div class="g-recaptcha" data-sitekey="6Lep8FAUAAAAAF2ly8QZkgWIxxrLra9mB_dsYD21"></div>
+        <input type="submit" value="Submit" />
+    }
+</div>
+<span style="display:inline-block; font-size:20px;margin:20px 0;padding:20px;border:1px solid #D3D3D3">
+    @ViewBag.Message
+</span>
+<script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
+
