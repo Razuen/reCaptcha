@@ -21,13 +21,13 @@ namespace recaptcha.Controllers
         {
             //Validate Google recaptcha here
             var response = Request["g-recaptcha-response"];
-            string secretKey = "6LfEclMUAAAAAAOEOTSXsefxoCGfqvYve-7WjD1V";
+            string secretKey = "";
             var client = new WebClient();
             var result = client.DownloadString(string.Format("https://www.google.com/recaptcha/api/siteverify?secret={0}&response={1}", secretKey, response));
             var obj = JObject.Parse(result);
             var status = (bool)obj.SelectToken("success");
             ViewBag.Message = status ? "Google reCaptcha validation success" : "Google reCaptcha validation failed";
-
+            String name=name.Tex
             //When you will post form for save data, you should check both the model validation and google recaptcha validation
             //EX.
             /* if (ModelState.IsValid && status)
