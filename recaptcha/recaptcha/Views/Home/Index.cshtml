@@ -1,35 +1,37 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
-<h2>Simple Form</h2>
-<div>
-    <span> <label>FirstName</label> </span>
-    <input type="text" name="name" />
-</div>
-<div>
-    <span> <label>Age</label> </span>
-    <input type="number" name="age" />
-</div>
-<div>
-    <span><label>Gender</label></span><br />
-    <span><input type="radio" name="M" /></span>
-    <span><label>Male</label></span>
-    <span><input type="radio" name="F" /></span>
-    <span><label>Female</label></span>
-</div>
-<div>
-    <span><label>Phone Number</label></span>
-    <input type="text" name="number" />
-</div>
-<div>
-    @using (Html.BeginForm("FormSubmit", "Home", FormMethod.Post))
-    {
+
+@using (Html.BeginForm("FormSubmit", "Home", FormMethod.Post))
+{
+    <h2>Simple Form</h2>
+    <div>
+        <span> <label>FirstName</label> </span>
+        <input type="text" name="name" />
+    </div>
+    <div>
+        <span> <label>Age</label> </span>
+        <input type="text" name="age" />
+    </div>
+    <div>
+        <span><label>Gender</label></span><br />
+        <span><input type="radio" name="M" /></span>
+        <span><label>Male</label></span>
+        <span><input type="radio" name="F" /></span>
+        <span><label>Female</label></span>
+    </div>
+    <div>
+        <span><label>Phone Number</label></span>
+        <input type="text" name="number" />
+    </div>
+    <div>
         <div class="g-recaptcha" data-sitekey=""></div>
         <input type="submit" value="Submit" />
-    }
-</div>
-<span style="display:inline-block; font-size:20px;margin:20px 0;padding:20px;border:1px solid #D3D3D3">
-    @ViewBag.Message
-</span>
-<script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
 
+    </div>
+    <span style="display:inline-block; font-size:20px;margin:20px 0;padding:20px;border:1px solid #D3D3D3">
+        @ViewBag.Message
+    </span>
+    <script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
+
+}
