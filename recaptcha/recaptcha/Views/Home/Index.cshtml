@@ -4,16 +4,27 @@
 <h2>Simple Form</h2>
 <div>
     <span> <label>FirstName</label> </span>
-    <input type="text" name="agename"/>
+    <input type="text" name="name" />
 </div>
 <div>
     <span> <label>Age</label> </span>
-    <input type="number" name="" />
+    <input type="number" name="age" />
+</div>
+<div>
+    <span><label>Gender</label></span><br />
+    <span><input type="radio" name="M" /></span>
+    <span><label>Male</label></span>
+    <span><input type="radio" name="F" /></span>
+    <span><label>Female</label></span>
+</div>
+<div>
+    <span><label>Phone Number</label></span>
+    <input type="text" name="number" />
 </div>
 <div>
     @using (Html.BeginForm("FormSubmit", "Home", FormMethod.Post))
     {
-        <div class="g-recaptcha" data-sitekey="6Lep8FAUAAAAAF2ly8QZkgWIxxrLra9mB_dsYD21"></div>
+        <div class="g-recaptcha" data-sitekey="6LfEclMUAAAAACfuaatcS5g_6o32Uv87rtDrHZsc"></div>
         <input type="submit" value="Submit" />
     }
 </div>
